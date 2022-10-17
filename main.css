@@ -1,0 +1,413 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: 0.5px;
+}
+
+/* header section */
+.navbar {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 5px grey;
+}
+
+.navbar .logo {
+  letter-spacing: 3px;
+}
+
+.navbar .navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(95vw, 1024px);
+  margin: auto;
+}
+
+.navbar-content a {
+  color: black;
+  padding: 10px;
+}
+
+.navbar .nav-btn {
+  display: none;
+}
+
+div.hero {
+  background: url("images/mac.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+.hero-content .intro {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-content .intro a {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  padding: 15px;
+}
+
+.hero .social-links {
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.social-links a {
+  color: grey;
+  padding: 1px;
+}
+
+/* about section */
+.about h1 {
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  margin-top: 1.5rem;
+}
+
+.feature {
+  flex-basis: 100%;
+  display: grid;
+  gap: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 5px rgb(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+.feature i {
+  font-size: 4rem;
+}
+
+.feature-1 i {
+  color: #0087ff;
+}
+
+.feature-2 i {
+  color: crimson;
+}
+
+.feature-3 i {
+  color: lightblue;
+}
+
+.feature-4 i {
+  color: grey;
+}
+
+/* promo section */
+.promo {
+  background: #eeeeee;
+}
+
+.promo-content img {
+  border-radius: 10px;
+}
+
+.promo-content .box1 {
+  display: grid;
+  gap: 1rem;
+}
+
+.promo-content .box1 a {
+  background: #222;
+  padding: 12px 15px;
+  color: white;
+}
+
+/* team section */
+.heading p {
+  margin-top: 1rem;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.profile {
+  box-shadow: 0 0 5px rgb(128, 128, 128, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info {
+  padding: 12px;
+  display: grid;
+  gap: 1rem;
+  line-height: 1.5;
+}
+
+.info .position {
+  color: gray;
+}
+
+.info a {
+  text-align: center;
+  color: white;
+  padding: 12px;
+  background: #222;
+  border-radius: 5px;
+}
+
+/* statistics section */
+.statistics {
+  background: #515151;
+}
+
+.stats {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.stats .stat {
+  flex-basis: 100%;
+  border: 2px solid white;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+}
+
+.stat i {
+  font-size: 2rem;
+}
+
+/* works section */
+.work p.heading {
+  margin: 1.5rem 0 3rem 0;
+}
+
+.work .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid img {
+  cursor: pointer;
+}
+
+#lightbox {
+  z-index: 100;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  place-items: center;
+  color: white;
+}
+
+#lightbox div {
+  width: min(90%, 764px);
+}
+
+#lightbox img {
+  box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#lightbox.active {
+  display: grid;
+}
+
+/* skills section */
+.skills {
+  background: #eeeeee;
+}
+
+.skills-content .box1 {
+  display: grid;
+  gap: 15px;
+}
+
+.progress-bars {
+  display: grid;
+  gap: 20px;
+}
+.progress-bars .progress-label i {
+  margin-right: 10px;
+}
+
+.progress-bars .progress-bar {
+  background: lightgray;
+}
+
+.progress-bar .progress-done {
+  text-align: center;
+  background: gray;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+.progress-bar .done-1 {
+  width: 90%;
+}
+
+.progress-bar .done-2 {
+  width: 75%;
+}
+
+.progress-bar .done-3 {
+  width: 85%;
+}
+
+/* pricing section */
+.pricing {
+  background: gray;
+  color: white;
+}
+
+.pricing h1 {
+  margin-bottom: 1.5rem;
+}
+
+.pricing-cards {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  flex:1;
+}
+
+.card h3:not(.pro h3) {
+  background: #222;
+  padding: 2rem;
+}
+
+.card-features {
+  background: white;
+  color: black;
+}
+
+.card-features li {
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.feature-highlight,
+.price-highlight {
+  font-weight: bold;
+}
+
+.price-highlight {
+  font-size: 2rem;
+}
+
+.month {
+  color: gray;
+}
+
+.signup-section {
+  background: lightgray;
+  padding: 1.5rem;
+}
+
+.signup-section button {
+  border: none;
+  background: #222;
+  color: white;
+  padding: 15px 5px;
+  width: 40%;
+}
+
+.pricing-cards .pro h3 {
+  background: #fe3a3a;
+  padding: 4rem;
+}
+
+/* contact section */
+.contact h1 {
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contact-info i {
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
+.contact form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact form input {
+  padding: 12px 5px;
+  border: 1.5px solid lightgray;
+}
+
+.contact form button {
+  border: none;
+  background: #222;
+  color: white;
+  justify-self: start;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.contact img {
+  border-radius: 5px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* footer section */
+footer {
+  background: #222;
+  color: white;
+}
+
+#topBtn {
+  background: lightgray;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer-links {
+  margin: 1.5rem 0;
+}
+
+.footer-links a {
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer #design-link {
+  color: orange;
+}
